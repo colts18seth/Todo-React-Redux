@@ -1,0 +1,30 @@
+.todoDiv {
+	margin-left: -2rem;
+	padding: 1rem 0 1rem 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.Todo {
+	margin-left: 2rem;
+	width: 60%;
+}
+
+.icons {
+	display: flex;
+	font-size: 1.2rem;
+	margin-right: 0.3rem;
+}
+
+.delete:hover {
+	color: red;
+}
+
+.check:hover {
+	color: rgb(0, 255, 0);
+}
+
+.done {
+	text-decoration: line-through;
+	color: rgba(0, 0, 0, 0.2);
+}
