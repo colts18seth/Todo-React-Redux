@@ -5,11 +5,11 @@ function Todo({ todo }) {
     const dispatch = useDispatch();
 
     const toggleDone = (e) => {
-        let classList = e.target.parentNode.parentNode.parentNode.classList;
-        if (classList.contains("done")) {
-            classList.remove("done");
-        } else {
+        let classList = e.currentTarget.parentNode.parentNode.classList;
+        if (!classList.contains("done")) {
             classList.add("done");
+        } else {
+            classList.remove("done");
         }
     }
 
